@@ -34,7 +34,21 @@ def clearAll():
     global equation_value
     equation_value = ""
     equation_Str.set(equation_value)
-    
+  
+
+def key_press(event):
+    key = event.char
+    if key in '0123456789':
+        button_press(key)
+    elif key in '+-*/%':
+        button_press(key)
+    elif key == '\r':       # Enter key
+        equal()
+    elif key == '\b':       # Backspace key
+        clearAll()
+    elif key == '.':
+        button_press('.')  
+  
 
 #frame1- to put the display label in place
 
@@ -99,5 +113,7 @@ button_dot.grid(row=0,column=2)
 button_module.grid(row=0,column=1)
 button_AC.grid(row=0,column=0)
 
+
+root.bind('<Key>', key_press)
 
 root.mainloop()
