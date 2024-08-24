@@ -80,3 +80,8 @@ To run these projects on your local machine:
 
 - **Python 3.x**
 - **Tkinter** (usually comes pre-installed with Python)
+
+
+##credits
+
+-** I am familiar with python language but new to GUI based application . So i wanted to try how are these made. As a fresher to this topic, i have to browse through so many youtube videos to understand this concepts. Now it's not too easy but i can understand the concepts without any problems.
